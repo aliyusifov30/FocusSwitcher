@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Focus Switcher",
+    "version": "1.2",
+    "description":"Block distracting websites and redirect to a productive or enjoyable site to stay focused and boost your productivity.",
+    "permissions": ["tabs", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Focus Switcher"
+    },
+    "icons": {
+    "16": "logo_2.png",
+    "32": "logo_2.png",
+    "48": "logo_2.png",
+    "128": "logo_2.png"
+  }
+}
+  

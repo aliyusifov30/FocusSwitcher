@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Switcher</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header template-element">
+      <img src="logo_2.png" alt="Focus Switcher Logo" id="head-logo" class="logo" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+      <p>Take control of your time and stay focused!</p>
+    </header>
+    <main class="main-content">
+      <section class="form-section">
+        <h2 class="template-element">
+          <span id="operation">Add</span> a Website
+        </h2>
+        <form id="blocker-form">
+          <input type="text" id="website-url" class="template-element" autocomplete="off" placeholder="example.com">
+          <span id="website-url-error" class="validation"></span>
+
+          <input type="text" id="redirect-url" class="template-element" autocomplete="off" placeholder="Optional: Redirect URL">
+          <!-- <span id="redirect-url-error" class="validation"></span> -->
+
+          <input type="hidden" id="blocked-website-element">
+          <button type="submit" class="template-element">Block Website</button>
+        </form>
+      </section>
+      <section class="blocked-sites">
+        <h2 class="template-element">Blocked Websites</h2>
+        <ul id="blocked-websites" class="scrollable-list">
+          <li class="no-website">No blocked websites yet</li>
+        </ul>
+      </section>
+      <section class="templates template-element">
+        <h2 class="template-element">Templates</h2>
+        <div class="template-options">
+          <div class="template" id="template-default" data-template="default">
+            Default
+          </div>
+          <div class="template" id="template-light" data-template="light">
+            Light
+          </div>
+          <div class="template" id="template-dark" data-template="dark">
+            Dark
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer template-element">
+      <p>📈 Boost your productivity with Focus Switcher!</p>
+    </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
